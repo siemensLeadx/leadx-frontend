@@ -1,0 +1,231 @@
+@import "../../scss/variables";
+
+.leads-details-container {
+  .RFS-StepButton {
+    background-color: #e6e6e6 !important;
+    color: $greyColor;
+  }
+  width: 57%;
+  margin: 0 auto;
+  padding-top: 4rem;
+  .status-container {
+    background-color: $whiteColor;
+    a {
+      color: $greyColor;
+      font-family: "Siemens-Sans-bold";
+    }
+  }
+  .hr {
+    border: 0.5px solid #e6e6e6;
+    margin: 0.7rem 0rem 0.7rem 0.4rem;
+  }
+  .status-circle {
+    span {
+      background-color: #e6e6e6;
+      border-radius: 50%;
+      color: $greyColor;
+      padding: 1rem 1.2rem;
+    }
+  }
+
+  .label {
+    color: $headingColor;
+    font-family: "Siemens-Sans";
+    margin-bottom: 10px;
+  }
+  .lead-data {
+    font-size: 17px;
+    font-family: "Siemens-Sans-bold";
+    color: #1a1a1a;
+    margin-bottom: 0;
+    font-weight: 900;
+  }
+  hr {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  .card-box-shadow {
+    box-shadow: 0 2px 11px 0 #a7a7a7;
+  }
+  .stepper-container {
+    &:first-child {
+      direction: ltr;
+    }
+  }
+  .reward-background {
+    background-image: url("../../assets/imgs/Card.svg");
+  }
+  .reward-container {
+    span {
+      color: $whiteColor;
+    }
+    color: $whiteColor;
+  }
+  .status-1 {
+    .stepper-container {
+      & > div > div > div:nth-child(1),
+      & > div > div > div:nth-child(2),
+      & > div > div > div:nth-child(3),
+      & > div > div > div:nth-child(4),
+      & > div > div > div:nth-child(5) {
+        & div:first-child {
+          & ~ div {
+            color: #d2d2d2 !important;
+            font-family: "Siemens-Sans-bold" !important;
+          }
+          background-color: $whiteColor !important;
+          border: 1px solid #d2d2d2 !important;
+          font-family: "Siemens-Sans-bold" !important;
+          span {
+            color: #d2d2d2 !important;
+            position: relative;
+            bottom: 2px;
+          }
+        }
+      }
+    }
+  }
+  .status-2 {
+    & a:nth-child(2) {
+      color: $greyColor !important;
+    }
+    .stepper-container {
+      & > div > div > div:nth-child(2),
+      & > div > div > div:nth-child(3),
+      & > div > div > div:nth-child(4),
+      & > div > div > div:nth-child(5) {
+        & div:first-child {
+          & ~ div {
+            color: #d2d2d2 !important;
+            font-family: "Siemens-Sans-bold" !important;
+          }
+          background-color: $whiteColor !important;
+          border: 1px solid #d2d2d2 !important;
+          font-family: "Siemens-Sans-bold" !important;
+          span {
+            color: #d2d2d2 !important;
+            position: relative;
+            bottom: 2px;
+          }
+        }
+      }
+    }
+  }
+  .status-3 {
+    .stepper-container {
+      & > div > div > div:first-child {
+        & a:nth-child(1) {
+          color: $greyColor !important;
+        }
+      }
+      & > div > div > div:nth-child(3),
+      & > div > div > div:nth-child(4),
+      & > div > div > div:nth-child(5) {
+        & div:first-child {
+          & ~ div {
+            color: #d2d2d2 !important;
+            font-family: "Siemens-Sans-bold" !important;
+          }
+          background-color: $whiteColor !important;
+          border: 1px solid #d2d2d2 !important;
+          font-family: "Siemens-Sans-bold" !important;
+          span {
+            color: #d2d2d2 !important;
+            position: relative;
+            bottom: 2px;
+          }
+        }
+      }
+    }
+  }
+  .status-4 {
+    .stepper-container {
+      & > div > div > div:nth-child(1),
+      & > div > div > div:nth-child(2) {
+        & a:nth-child(1) {
+          color: $greyColor !important;
+        }
+      }
+      & > div > div > div:nth-child(4),
+      & > div > div > div:nth-child(5) {
+        & div:first-child {
+          & ~ div {
+            color: #d2d2d2 !important;
+            font-family: "Siemens-Sans-bold" !important;
+          }
+          background-color: $whiteColor !important;
+          border: 1px solid #d2d2d2 !important;
+          font-family: "Siemens-Sans-bold" !important;
+          span {
+            color: #d2d2d2 !important;
+            position: relative;
+            bottom: 2px;
+          }
+        }
+      }
+    }
+  }
+  .status-6 {
+    .stepper-container {
+      & > div > div > div:nth-child(1),
+      & > div > div > div:nth-child(2),
+      & > div > div > div:nth-child(3) {
+        & a:nth-child(1) {
+          color: $greyColor !important;
+        }
+      }
+      & > div > div > div:nth-child(5) {
+        & div:first-child {
+          & ~ div {
+            color: #d2d2d2 !important;
+            font-family: "Siemens-Sans-bold" !important;
+          }
+          background-color: $whiteColor !important;
+          border: 1px solid #d2d2d2 !important;
+          font-family: "Siemens-Sans-bold" !important;
+          span {
+            color: #d2d2d2 !important;
+            position: relative;
+            bottom: 2px;
+          }
+        }
+      }
+    }
+  }
+  .status-7 {
+    .stepper-container {
+      & > div > div > div:nth-child(1),
+      & > div > div > div:nth-child(2),
+      & > div > div > div:nth-child(3),
+      & > div > div > div:nth-child(4) {
+        & a:nth-child(1) {
+          color: $greyColor !important;
+        }
+      }
+    }
+  }
+}
+
+.rtl {
+  .stepper-container.col {
+    direction: rtl;
+
+    & > div > div > div:first-child div:last-child {
+      right: 50% !important;
+      left: 0px !important;
+      margin-right: 26.5px !important;
+      margin-left: unset !important;
+    }
+
+    & > div > div > div:last-child div:last-child {
+      right: 0 !important;
+      left: 50% !important;
+      margin-left: 26.5px;
+      margin-right: unset;
+    }
+  }
+}

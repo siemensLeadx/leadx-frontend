@@ -1,0 +1,241 @@
+@import "./variables";
+@import "./fonts";
+
+html,
+body {
+  outline: 0 !important;
+  background-color: $mainBackGroundColor;
+  font-size: 15px;
+}
+.SH-Bree-Headline {
+  font-family: "SH-Bree-Headline";
+}
+
+.headingsColor {
+  color: $headingColor;
+}
+
+.headingLeadsColor {
+  color: $headingLeadsColor;
+}
+.greyColor {
+  color: $greyColor;
+}
+
+.Siemens-Sans {
+  font-family: "Siemens-Sans";
+}
+
+.Siemens-Sans-black {
+  font-family: "Siemens-Sans-black";
+}
+
+.Siemens-Sans-bold {
+  font-family: "Siemens-Sans-bold";
+}
+
+.font-size-13 {
+  font-size: 0.867rem;
+}
+.font-size-14 {
+  font-size: 0.93rem;
+}
+.font-size-12 {
+  font-size: 0.8rem;
+}
+.font-size-19 {
+  font-size: 1.27rem;
+}
+.font-size-23 {
+  font-size: 1.53rem;
+}
+.font-size-18 {
+  font-size: 1.2rem;
+}
+.font-size-16 {
+  font-size: 1.067rem;
+}
+.font-size-17 {
+  font-size: 1.13rem;
+}
+.font-weight-900 {
+  font-weight: 900;
+}
+.date-notification-font {
+  color: $notificationDate;
+}
+.date-message-font {
+  color: $notificationMsg;
+}
+
+.breadCrumpIcon {
+  &:after {
+    content: ">";
+    font-family: "feather";
+    color: #1a1a1a;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+#root {
+  position: relative;
+}
+
+.rtl {
+  text-align: right;
+  min-height: 98vh;
+  display: flex;
+  flex-direction: column;
+  .header-container {
+    .nav-bar {
+      div[class*="IndicatorsContainer"] {
+        margin-left: 0.75rem !important;
+        margin-right: unset !important;
+      }
+    }
+  }
+  .Siemens-Sans {
+    font-family: "Cairo-Regular";
+  }
+
+  .Siemens-Sans-black {
+    font-family: "Cairo-Black";
+  }
+
+  .Siemens-Sans-bold {
+    font-family: "Cairo-Bold";
+  }
+  .date-lead-data {
+    direction: ltr;
+  }
+}
+.ltr {
+  min-height: 98vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  margin: 0 auto;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.word-break {
+  word-break: break-all;
+}
+.btn-none {
+  background-color: $primaryColor;
+  border: none;
+  padding: 0.69rem 1.2rem;
+  font-family: "Siemens-Sans-black";
+  font-size: 15px;
+  color: #fff;
+  font-weight: 900;
+  &:hover {
+    color: #fff;
+  }
+}
+
+//responsive
+
+@media only screen and (max-width: 900px) {
+  body {
+    font-size: 13px !important;
+  }
+  //login
+  .login-container {
+    .login-dark-img {
+      display: none;
+    }
+    .col-md-8 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .login-with-microsoft {
+      margin: 15.2% auto !important;
+    }
+  }
+  //create lead
+  .create-leads-container {
+    width: 90% !important;
+  }
+  //lead details
+  .leads-details-container {
+    width: 90% !important;
+  }
+  .notification-popup-container {
+    width: 50% !important;
+    left: 40% !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    font-size: 12px !important;
+  }
+  //header
+  .header-container {
+    .leadsx-container {
+      display: none;
+    }
+    .contact-us-container {
+      display: none;
+    }
+    .col-sm-5 {
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+    }
+    .user-name-container {
+      display: none;
+    }
+  }
+  //login
+  .login-container {
+    .login-data-section {
+      padding: 1.5rem !important;
+    }
+  }
+  //leads list
+  .lead-list-container {
+    width: 90% !important;
+  }
+  //lead details
+  .leads-details-container {
+    width: 90% !important;
+  }
+  .stepper-container > div > div {
+    display: unset !important;
+  }
+  .stepper-container > div > div > div {
+    display: unset !important;
+    margin-top: 0.3rem !important;
+    margin-bottom: 0.3rem !important;
+  }
+  .stepper-container {
+    a {
+      margin-bottom: 1.3rem !important;
+    }
+  }
+  .stepper-container > div > div > div > div ~ div {
+    margin-bottom: 1.3rem !important;
+  }
+  .status-container.card-box-shadow {
+    width: 50% !important;
+    padding-top: 1.7rem !important;
+    padding-bottom: 1.7rem !important;
+  }
+  //notifications
+  .notification-popup-container {
+    width: 70% !important;
+    left: 20% !important;
+  }
+  //contact us 
+  .contact-us-section {
+    .contact-us-logos {
+      width: unset !important;
+    }
+  }
+}

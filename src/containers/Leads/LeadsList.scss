@@ -1,0 +1,19 @@
+ .lead-list-container {
+      width: 57%;
+      margin: 0 auto;
+     .empty-state {
+        background-color: rgba(255, 255, 255, 1);
+        margin: 4.5rem auto;
+        text-align: center;
+        padding: 4.5rem 0rem;
+        p{
+            line-height: 1.2;
+        }
+        img[alt="no-leads"]{
+            width: 30%;
+        }
+     }
+    span{
+        padding: 0.2rem 0.5rem;
+    }
+ }
