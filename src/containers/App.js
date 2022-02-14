@@ -18,7 +18,7 @@ const App = () => {
   const { lang } = locale;
 
   useEffect(() => {
-    localStorage.getItem("token") && dispatch(storeFCMtocken({
+    localStorage.getItem("token") && localStorage.getItem("firebaseToken") &&dispatch(storeFCMtocken({
       model : `${deviceDetect().browserName}${localStorage.getItem("token")}`,
       token :  localStorage.getItem("firebaseToken")
     }))

@@ -17,7 +17,7 @@ export const loginAPi = (user) => async (dispatch) => {
     dispatch(storeLoginApiData(res.data.data));
     localStorage.setItem("token",res?.data?.data?.access_token);
     localStorage.setItem("loginApiUserData" , JSON.stringify(res?.data?.data))
-    dispatch(storeFCMtocken({
+    localStorage.getItem("firebaseToken") && dispatch(storeFCMtocken({
       model : `${deviceDetect().browserName}${res?.data?.data?.access_token}`,
       token :  localStorage.getItem("firebaseToken")
     }))
@@ -79,6 +79,16 @@ export const clearFCMtoken = (body) => async (dispatch) => {
         });
     }
   } catch (err) {
+    localStorage.removeItem("token");
+    localStorage.removeItem("loginMicrosoftMsal");
+    localStorage.removeItem("loginApiUserData");
+    localStorage.removeItem("microsoftLoginData");
+      history.push({
+        pathname: "/",
+        state: {
+          from: "logout",
+        },
+      });
     console.log(err);
   }
 };
