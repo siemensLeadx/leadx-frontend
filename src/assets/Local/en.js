@@ -18,7 +18,7 @@ export default {
     NewCustomer : 'NewCustomer',
     AddSystem : 'Add System',
     Submit : 'Submit',
-    DevicesLeads : 'Devices/Neads',
+    DevicesLeads : 'Devices/Needs',
     ThisFieldisRequired: 'This field is required',
     LeadX : 'LeadX',
     contactUS : 'Contact us',
