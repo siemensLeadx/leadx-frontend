@@ -35,19 +35,19 @@ const   userAgentApplication = new UserAgentApplication({
   });
 
 const  login = async () => {
-    try {
-      await userAgentApplication.loginPopup(
-        {
-          scopes: config.scopes,
-          prompt: "select_account"
-        });
-
+  try {
+    await userAgentApplication.loginPopup(
+      {
+        scopes: config.scopes,
+        prompt: "select_account"
+      });
+      
       const identifier = userAgentApplication?.account?.accountIdentifier.split("-");
       const loginUserData = {
         email: userAgentApplication?.account?.userName,
         first_name: userAgentApplication?.account?.idToken?.name.split(' ').slice(0, -1).join(' ') || "-",
         last_name: userAgentApplication?.account?.idToken?.name.split(' ').slice(-1).join(' ') || "-",
-        login_provider_id: identifier[3] + identifier[4] || "-"
+        login_provider_id: userAgentApplication?.account?.accountIdentifier || "-"
       };
       localStorage.setItem("loginMicrosoftMsal", JSON.stringify(userAgentApplication));
       localStorage.setItem("microsoftLoginData", JSON.stringify(userAgentApplication));
