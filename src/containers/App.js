@@ -26,11 +26,11 @@ const App = () => {
 
 
   test && test.onMessage((payload) => {
-      if(  payload._notification) {
-        const { body, title } =  payload._notification
-        body && title && toast(<div>
-          <p>{body}</p>
-          <p>{title}</p>
+    if(  payload._notification) {
+      const { body, title } =  payload._notification
+        body && toast(<div>
+          {body && <p>{body}</p>}
+          {title && <p>{title}</p>}
         </div>)
 
       }
