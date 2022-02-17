@@ -41,13 +41,12 @@ const  login = async () => {
         scopes: config.scopes,
         prompt: "select_account"
       });
-      const identifierIdCopy = userAgentApplication?.account?.accountIdentifier;
       const identifier = userAgentApplication?.account?.accountIdentifier.split("-");
       const loginUserData = {
         email: userAgentApplication?.account?.userName,
         first_name: userAgentApplication?.account?.idToken?.name.split(' ').slice(0, -1).join(' ') || "-",
         last_name: userAgentApplication?.account?.idToken?.name.split(' ').slice(-1).join(' ') || "-",
-        login_provider_id: ((identifierIdCopy.substring(0, 1)==0)? identifier[3] + identifier[4]  : userAgentApplication?.account?.accountIdentifier) || "-"
+        login_provider_id: (userAgentApplication?.account?.userName?.includes("@ibtikar.net.sa")? identifier[3] + identifier[4]  : userAgentApplication?.account?.accountIdentifier) || "-"
       };
       localStorage.setItem("loginMicrosoftMsal", JSON.stringify(userAgentApplication));
       localStorage.setItem("microsoftLoginData", JSON.stringify(userAgentApplication));
