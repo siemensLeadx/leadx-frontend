@@ -13,7 +13,7 @@ import "./LeadsDetails.scss";
 
 const LeadsDetails = () => {
   const VerifiedbyDCE = <FormattedMessage id="VerifiedbyDCE" />;
-  const Confirmed = <FormattedMessage id="Confirmed" />;
+  // const Confirmed = <FormattedMessage id="Confirmed" />;
   const Approved = <FormattedMessage id="Approved" />;
   const Promoted = <FormattedMessage id="Promoted" />;
   const OrderBooked = <FormattedMessage id="OrderBooked" />;
@@ -76,7 +76,7 @@ const LeadsDetails = () => {
               <Stepper
                 steps={[
                   { title: VerifiedbyDCE },
-                  { title: Confirmed },
+                  // { title: Confirmed },
                   { title: Approved },
                   { title: Promoted },
                   { title: OrderBooked },
