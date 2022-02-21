@@ -29,14 +29,14 @@ const LeadsDetails = () => {
     switch (leadListDetails?.lead_status_id) {
       case 2:
         return 0;
-      case 3:
-        return 1;
+      // case 3:
+      //   return 1;
       case 4:
-        return 2;
+        return 1;
       case 6:
-        return 3;
+        return 2;
       case 7:
-        return 4;
+        return 3;
       default:
         return null;
     }
@@ -142,6 +142,7 @@ const LeadsDetails = () => {
                     {" "}
                     <FormattedMessage id="rewardMsg1" />{" "}
                     {leadListDetails?.reward}{" "}
+                    <FormattedMessage id="SAR" />{" "}
                     <FormattedMessage id="rewardMsg2" />{" "}
                   </p>
                 </div>

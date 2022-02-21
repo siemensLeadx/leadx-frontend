@@ -144,12 +144,13 @@
   }
   .status-4 {
     .stepper-container {
-      & > div > div > div:nth-child(1),
-      & > div > div > div:nth-child(2) {
-        & a:nth-child(1) {
-          color: $greyColor !important;
-        }
-      }
+      // & > div > div > div:nth-child(1),
+      // & > div > div > div:nth-child(2) {
+      //   & a:nth-child(1) {
+      //     color: $greyColor !important;
+      //   }
+      // }
+      & > div > div > div:nth-child(3),
       & > div > div > div:nth-child(4),
       & > div > div > div:nth-child(5) {
         & div:first-child {
@@ -172,8 +173,7 @@
   .status-6 {
     .stepper-container {
       & > div > div > div:nth-child(1),
-      & > div > div > div:nth-child(2),
-      & > div > div > div:nth-child(3) {
+      & > div > div > div:nth-child(2){
         & a:nth-child(1) {
           color: $greyColor !important;
         }
@@ -200,8 +200,7 @@
     .stepper-container {
       & > div > div > div:nth-child(1),
       & > div > div > div:nth-child(2),
-      & > div > div > div:nth-child(3),
-      & > div > div > div:nth-child(4) {
+      & > div > div > div:nth-child(3) {
         & a:nth-child(1) {
           color: $greyColor !important;
         }

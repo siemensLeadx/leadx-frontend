@@ -39,7 +39,7 @@ export default {
     Confirmed : "Confirmed",
     Approved : "Approved",
     Promoted : "Promoted",
-    OrderBooked : "OrderBooked",
+    OrderBooked : "Order Booked",
     Rejected : "Rejected",
     rejectedMsg : "This request has been rejected beacuse the lead out of our supported areas",
     LeadDate : "Lead Date",
@@ -64,7 +64,8 @@ export default {
     sendQorProblem : "Send your question or problem",
     customerService : "Customer Service",
     city: "city",
-    Sector : "Sector"
+    Sector : "Sector",
+    SAR : "SAR"
 
   }
 }

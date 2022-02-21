@@ -64,7 +64,8 @@ export default {
     sendQorProblem : "Send your question or problem",
     customerService : "Customer Service",
     city: "المدينة",
-    Sector : "قطاع"
+    Sector : "قطاع",
+    SAR : "ر.س"
 
   }
 }
