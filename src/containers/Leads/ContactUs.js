@@ -37,7 +37,7 @@ const ContactUs = () => {
                       </Col>
                       <Col className="mx-3">
                       <p className="mb-0 headingColor Siemens-Sans-bold pt-1"> <FormattedMessage id="sendEmail"/></p>
-                      <p className="font-size-14 Siemens-Sans">  <FormattedMessage id="sendQorProblem"/></p>
+                      <p className="font-size-14 Siemens-Sans">eyas.khalaf@siemens-healthineers.com </p>
                       </Col>
                   </Row>
                   <hr className="mb-2"/>
@@ -49,7 +49,7 @@ const ContactUs = () => {
                       </Col>
                       <Col className="mx-3">
                       <p className="mb-0 headingColor Siemens-Sans-bold pt-1"> <FormattedMessage id="customerService"/></p>
-                      <p className="font-size-14 Siemens-Sans"> 977364287</p>
+                      <p className="font-size-14 Siemens-Sans" dir="ltr"> +966 567647005 </p>
                       </Col>
                   </Row>
                 </div>
