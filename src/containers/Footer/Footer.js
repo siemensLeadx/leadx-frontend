@@ -1,8 +1,8 @@
 import React from "react";
-import policy from "../../assets/policy/Privacy Policy_SHS Websites (track-change- legalcompliance review 01032022)_English (LeadX).pdf";
-import policyAr from "../../assets/policy/Privacy Policy_SHS Websites (track-change- legalcompliance review 01032022)_Arabic (Leadx)-converted.pdf";
-import terms from "../../assets/policy/LeadX Terms and Conditions (Draft)_200222 (English).pdf";
-import termsAr from "../../assets/policy/LeadX Terms and Conditions (Draft)_200222 (Arabic).pdf";
+import policy from "../../assets/policy/LeadX_Privacy_PolicyEn.pdf";
+import policyAr from "../../assets/policy/LeadX_Privacy_PolicyAr.pdf";
+import terms from "../../assets/policy/LeadX_Terms_ConditionsEn.pdf";
+import termsAr from "../../assets/policy/LeadX_Terms_ConditionsAr.pdf";
 import "./Footer.scss";
 import { useSelector } from "react-redux";
 
@@ -20,11 +20,12 @@ const Footer = () => {
         <a
           href={lang === "ar" ? policyAr : policy}
           target="_blank"
+          rel="noopener noreferrer"
         >
           Privacy Policy
         </a>{" "}
         |{" "}
-        <a href={lang === "ar" ? termsAr : terms} target="_blank">
+        <a href={lang === "ar" ? termsAr : terms} target="_blank"  rel="noopener noreferrer">
           Terms of Use
         </a>
       </p>
